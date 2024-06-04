@@ -11,13 +11,13 @@ Ingreso de usuarios: Un usuario puede ingresar al sistema utilizando una clave s
 ## Menú principal:
 Una vez ingresado, el usuario tiene acceso a un menú principal donde puede:
 
-# Monitorear sensores: 
+### Monitorear sensores: 
 El sistema puede leer datos de sensores como temperatura, luminosidad y movimiento y mostrarlos en la pantalla LCD.
 
-# Visualizar alarmas:
+### Visualizar alarmas:
 Si se detecta un valor fuera de rango en los sensores, el sistema activa una alarma visual (LED rojo) y sonora (buzzer) y muestra un mensaje en la pantalla LCD.
 
-#Bloqueo por intentos fallidos:
+### Bloqueo por intentos fallidos:
 Si un usuario ingresa la clave incorrecta varias veces, el sistema se bloquea y requiere un reinicio.
 
 # Bosquejo de sistema
