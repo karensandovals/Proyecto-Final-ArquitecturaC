@@ -14,4 +14,10 @@ Visualizar alarmas: Si se detecta un valor fuera de rango en los sensores, el si
 Bloqueo por intentos fallidos: Si un usuario ingresa la clave incorrecta varias veces, el sistema se bloquea y requiere un reinicio.
 
 # Bosquejo de sistema
-![image](https://github.com/karensandovals/Proyecto-Final-ArquitecturaC/assets/136817019/d14f30aa-96f5-46f4-8c2d-beb0af6dbc8e)
+![image](https://github.com/karensandovals/Proyecto-Final-ArquitecturaC/assets/136817019/f591abe2-ef9a-4c8d-b36c-db7b22bc3322)
+
+# Funciones de la maquina de estados
+# Transiciones:
+
+![Diagrama sin título-ARQ_A](https://github.com/karensandovals/Proyecto-Final-ArquitecturaC/assets/136817019/3a9cff5c-9c85-4a13-924b-69a05705dcfc)
+
