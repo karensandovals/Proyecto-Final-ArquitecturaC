@@ -1,0 +1,1660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Name: Sistema de control de acceso y monitoreo con Arduino: Referencia del archivo Wokwi/sketch/sketch.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Name: Sistema de control de acceso y monitoreo con Arduino<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Este proyecto implementa un sistema de control de acceso y monitoreo utilizando una placa Arduino.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_1c2c6e3a370d6d2048ea28b7289a94ba.html">Wokwi</a></li><li class="navelem"><a class="el" href="dir_a7d16246405ff57680d62f3b1ba7e527.html">sketch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo sketch.ino</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;Keypad.h&gt;</code><br />
+<code>#include &lt;LiquidCrystal.h&gt;</code><br />
+<code>#include &quot;DHT.h&quot;</code><br />
+</div>
+<p><a href="sketch_8ino_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a40b4fe45622d5b33767ead7735f354c4" id="r_a40b4fe45622d5b33767ead7735f354c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40b4fe45622d5b33767ead7735f354c4">beta</a>&#160;&#160;&#160;4090</td></tr>
+<tr class="separator:a40b4fe45622d5b33767ead7735f354c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1b110324fd8383fe7404e7932189b9" id="r_acf1b110324fd8383fe7404e7932189b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf1b110324fd8383fe7404e7932189b9">DEFAULT_TEMPHIGH</a>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:acf1b110324fd8383fe7404e7932189b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe7a9e726ecec741b2e57e96d1a9aa0" id="r_acbe7a9e726ecec741b2e57e96d1a9aa0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe7a9e726ecec741b2e57e96d1a9aa0">DEFAULT_TEMPLOW</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:acbe7a9e726ecec741b2e57e96d1a9aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31617972a802e7a13f402be9db555bc3" id="r_a31617972a802e7a13f402be9db555bc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31617972a802e7a13f402be9db555bc3">DEFAULT_LUZHIGH</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a31617972a802e7a13f402be9db555bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e6b84e2cd64d473169ca5f8e013370" id="r_a74e6b84e2cd64d473169ca5f8e013370"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74e6b84e2cd64d473169ca5f8e013370">DEFAULT_LUZLOW</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a74e6b84e2cd64d473169ca5f8e013370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918042b793d057bd1038d859bc769ec0" id="r_a918042b793d057bd1038d859bc769ec0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a918042b793d057bd1038d859bc769ec0">NOTE_B6</a>&#160;&#160;&#160;1976</td></tr>
+<tr class="separator:a918042b793d057bd1038d859bc769ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a673e851d3b7e3b56a7cd83fba56cc3" id="r_a4a673e851d3b7e3b56a7cd83fba56cc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a673e851d3b7e3b56a7cd83fba56cc3">NOTE_C7</a>&#160;&#160;&#160;2093</td></tr>
+<tr class="separator:a4a673e851d3b7e3b56a7cd83fba56cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1638b00a6bdc7d49ca174d866506d8" id="r_a9a1638b00a6bdc7d49ca174d866506d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a1638b00a6bdc7d49ca174d866506d8">NOTE_CS7</a>&#160;&#160;&#160;2217</td></tr>
+<tr class="separator:a9a1638b00a6bdc7d49ca174d866506d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb563ef21585da30f0b764af28c0756" id="r_aedb563ef21585da30f0b764af28c0756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb563ef21585da30f0b764af28c0756">NOTE_D7</a>&#160;&#160;&#160;2349</td></tr>
+<tr class="separator:aedb563ef21585da30f0b764af28c0756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c509dba12bba99883a5be9341b7a0c5" id="r_a2c509dba12bba99883a5be9341b7a0c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c509dba12bba99883a5be9341b7a0c5">DHTTYPE</a>&#160;&#160;&#160;DHT22</td></tr>
+<tr class="separator:a2c509dba12bba99883a5be9341b7a0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61d0981ed42df9e18211b273d22cfcd" id="r_ab61d0981ed42df9e18211b273d22cfcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab61d0981ed42df9e18211b273d22cfcd">BUZZER_PIN</a>&#160;&#160;&#160;22</td></tr>
+<tr class="separator:ab61d0981ed42df9e18211b273d22cfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170c6a1904d45873b6bf59acd2509143" id="r_a170c6a1904d45873b6bf59acd2509143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a170c6a1904d45873b6bf59acd2509143">DHT22_PIN</a>&#160;&#160;&#160;A0</td></tr>
+<tr class="separator:a170c6a1904d45873b6bf59acd2509143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988f6310ca6cc078c4e7493068584167" id="r_a988f6310ca6cc078c4e7493068584167"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a988f6310ca6cc078c4e7493068584167">photo</a>&#160;&#160;&#160;A1</td></tr>
+<tr class="separator:a988f6310ca6cc078c4e7493068584167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912868efa92126901849f6bd39d14c9b" id="r_a912868efa92126901849f6bd39d14c9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a912868efa92126901849f6bd39d14c9b">PIR_SENSOR_PIN</a>&#160;&#160;&#160;27</td></tr>
+<tr class="separator:a912868efa92126901849f6bd39d14c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc48aa17a10801f38e336d2249224da" id="r_a2cc48aa17a10801f38e336d2249224da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc48aa17a10801f38e336d2249224da">ledRedPin</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a2cc48aa17a10801f38e336d2249224da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8628db2ed8daecb57a3ef8538b9ed1f2" id="r_a8628db2ed8daecb57a3ef8538b9ed1f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8628db2ed8daecb57a3ef8538b9ed1f2">ledGreenPin</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a8628db2ed8daecb57a3ef8538b9ed1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603280557929e1e4c0f5aad1901841a0" id="r_a603280557929e1e4c0f5aad1901841a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a603280557929e1e4c0f5aad1901841a0">ledBluePin</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a603280557929e1e4c0f5aad1901841a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a63f0015a508e64681eba633545f18f62" id="r_a63f0015a508e64681eba633545f18f62"><td class="memItemLeft" align="right" valign="top">DHT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63f0015a508e64681eba633545f18f62">dht</a> (<a class="el" href="#a170c6a1904d45873b6bf59acd2509143">DHT22_PIN</a>, <a class="el" href="#a2c509dba12bba99883a5be9341b7a0c5">DHTTYPE</a>)</td></tr>
+<tr class="separator:a63f0015a508e64681eba633545f18f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97afdf00af0e116e9b5957f6a470fc2" id="r_af97afdf00af0e116e9b5957f6a470fc2"><td class="memItemLeft" align="right" valign="top">LiquidCrystal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af97afdf00af0e116e9b5957f6a470fc2">lcd</a> (12, 11, 5, 4, 3, 2)</td></tr>
+<tr class="separator:af97afdf00af0e116e9b5957f6a470fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d" id="r_a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f" id="r_afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9674abb6702a0e68b5c7d991c2380b" id="r_a9f9674abb6702a0e68b5c7d991c2380b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f9674abb6702a0e68b5c7d991c2380b">Estados</a> ()</td></tr>
+<tr class="separator:a9f9674abb6702a0e68b5c7d991c2380b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a1ea84003221a240305c326024ea3e" id="r_a56a1ea84003221a240305c326024ea3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a1ea84003221a240305c326024ea3e">solicitarClave</a> ()</td></tr>
+<tr class="separator:a56a1ea84003221a240305c326024ea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97e84012a0dd4bd6035ba3b1266febd" id="r_ae97e84012a0dd4bd6035ba3b1266febd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae97e84012a0dd4bd6035ba3b1266febd">verificarClave</a> ()</td></tr>
+<tr class="separator:ae97e84012a0dd4bd6035ba3b1266febd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0aca0f34a52fbe7527a03517bc3347e" id="r_ac0aca0f34a52fbe7527a03517bc3347e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0aca0f34a52fbe7527a03517bc3347e">mostrarMenu</a> ()</td></tr>
+<tr class="separator:ac0aca0f34a52fbe7527a03517bc3347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57d0ea031455ae41ca3ff37c8db3558" id="r_aa57d0ea031455ae41ca3ff37c8db3558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57d0ea031455ae41ca3ff37c8db3558">esperarSeleccion</a> ()</td></tr>
+<tr class="separator:aa57d0ea031455ae41ca3ff37c8db3558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ba10ed13aaf348f37ac0b32f9bf85e" id="r_aa6ba10ed13aaf348f37ac0b32f9bf85e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6ba10ed13aaf348f37ac0b32f9bf85e">ejecutarOpcion</a> (char opcion)</td></tr>
+<tr class="separator:aa6ba10ed13aaf348f37ac0b32f9bf85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c6ab15b243537ad6ee55743d8ef2b4" id="r_ab9c6ab15b243537ad6ee55743d8ef2b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c6ab15b243537ad6ee55743d8ef2b4">umbralTempHigh</a> ()</td></tr>
+<tr class="separator:ab9c6ab15b243537ad6ee55743d8ef2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816fffa10923121dbf0675d9ddbb4c51" id="r_a816fffa10923121dbf0675d9ddbb4c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a816fffa10923121dbf0675d9ddbb4c51">umbralTempLow</a> ()</td></tr>
+<tr class="separator:a816fffa10923121dbf0675d9ddbb4c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4ea0e95a34121ba42cbaf3154d5a6e" id="r_afd4ea0e95a34121ba42cbaf3154d5a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd4ea0e95a34121ba42cbaf3154d5a6e">umbralLuzHigh</a> ()</td></tr>
+<tr class="separator:afd4ea0e95a34121ba42cbaf3154d5a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1024e3f890b59eecc71bf42c4bcb6849" id="r_a1024e3f890b59eecc71bf42c4bcb6849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1024e3f890b59eecc71bf42c4bcb6849">umbralLuzLow</a> ()</td></tr>
+<tr class="separator:a1024e3f890b59eecc71bf42c4bcb6849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bebaa0fc55210dcedca0d632796e22" id="r_ac3bebaa0fc55210dcedca0d632796e22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bebaa0fc55210dcedca0d632796e22">Monitoreo</a> ()</td></tr>
+<tr class="separator:ac3bebaa0fc55210dcedca0d632796e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf01166140290f8d4fb5e12b3d51788" id="r_accf01166140290f8d4fb5e12b3d51788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf01166140290f8d4fb5e12b3d51788">MonitoreoMovimiento</a> ()</td></tr>
+<tr class="separator:accf01166140290f8d4fb5e12b3d51788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea994e4e9ab2bb7c38d31d3f5879fc6" id="r_adea994e4e9ab2bb7c38d31d3f5879fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adea994e4e9ab2bb7c38d31d3f5879fc6">mostrarMensaje</a> (String mensaje)</td></tr>
+<tr class="separator:adea994e4e9ab2bb7c38d31d3f5879fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2300b9e065d5aa715d2cc312f0b4e8c" id="r_ac2300b9e065d5aa715d2cc312f0b4e8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2300b9e065d5aa715d2cc312f0b4e8c">sonar_buzz</a> ()</td></tr>
+<tr class="separator:ac2300b9e065d5aa715d2cc312f0b4e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d20d7a93eea853f134ec3b9ac583ab" id="r_a96d20d7a93eea853f134ec3b9ac583ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d20d7a93eea853f134ec3b9ac583ab">color</a> (unsigned char red, unsigned char green, unsigned char blue, unsigned int <a class="el" href="#a078938e74376a5d2d8d5d3efd25de176">tiempo</a>)</td></tr>
+<tr class="separator:a96d20d7a93eea853f134ec3b9ac583ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1dd39461bef62118160834c4c3c44d" id="r_a9e1dd39461bef62118160834c4c3c44d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e1dd39461bef62118160834c4c3c44d">verificarTempHigh</a> (int temp)</td></tr>
+<tr class="separator:a9e1dd39461bef62118160834c4c3c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac456a749a7f672efc99a8c5c664a49fd" id="r_ac456a749a7f672efc99a8c5c664a49fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac456a749a7f672efc99a8c5c664a49fd">verificarTempLow</a> (int temp)</td></tr>
+<tr class="separator:ac456a749a7f672efc99a8c5c664a49fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc21d01bc8a6b3fe354fa20ee482758" id="r_a0fc21d01bc8a6b3fe354fa20ee482758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fc21d01bc8a6b3fe354fa20ee482758">verificarLuzHigh</a> (int <a class="el" href="#a361d9560a5d2b91fded39e22d14764e4">luz</a>)</td></tr>
+<tr class="separator:a0fc21d01bc8a6b3fe354fa20ee482758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dc4816e7c5cf37d523cc832778c0c5" id="r_a58dc4816e7c5cf37d523cc832778c0c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58dc4816e7c5cf37d523cc832778c0c5">verificarLuzLow</a> (int <a class="el" href="#a361d9560a5d2b91fded39e22d14764e4">luz</a>)</td></tr>
+<tr class="separator:a58dc4816e7c5cf37d523cc832778c0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55" id="r_ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3e1bc103a5516c793826386126a9311d" id="r_a3e1bc103a5516c793826386126a9311d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e1bc103a5516c793826386126a9311d">band</a> = false</td></tr>
+<tr class="separator:a3e1bc103a5516c793826386126a9311d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae39a1b13e20f6624c189afc2d64bdd" id="r_a2ae39a1b13e20f6624c189afc2d64bdd"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ae39a1b13e20f6624c189afc2d64bdd">password</a> [5]</td></tr>
+<tr class="separator:a2ae39a1b13e20f6624c189afc2d64bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe79c7e2f7d71b2f85cae60b8936924" id="r_abbe79c7e2f7d71b2f85cae60b8936924"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbe79c7e2f7d71b2f85cae60b8936924">clave</a> [5] = {'0', '1', '2', '3', '4'}</td></tr>
+<tr class="separator:abbe79c7e2f7d71b2f85cae60b8936924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961800bf60ff693820efbf7f4bc72788" id="r_a961800bf60ff693820efbf7f4bc72788"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a961800bf60ff693820efbf7f4bc72788">cont</a> = 0</td></tr>
+<tr class="separator:a961800bf60ff693820efbf7f4bc72788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94c7b86d418ed6114b2278c43734e57" id="r_aa94c7b86d418ed6114b2278c43734e57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa94c7b86d418ed6114b2278c43734e57">intentos</a> = 3</td></tr>
+<tr class="separator:aa94c7b86d418ed6114b2278c43734e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27e263192f0a38422bd140b1d31f447" id="r_ae27e263192f0a38422bd140b1d31f447"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae27e263192f0a38422bd140b1d31f447">bandera</a> = true</td></tr>
+<tr class="separator:ae27e263192f0a38422bd140b1d31f447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae892685ecf650b88b14da12901b40844" id="r_ae892685ecf650b88b14da12901b40844"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae892685ecf650b88b14da12901b40844">bloqueado</a> = false</td></tr>
+<tr class="separator:ae892685ecf650b88b14da12901b40844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff2872d1d9a6e2116391d1bb274ea05" id="r_a5ff2872d1d9a6e2116391d1bb274ea05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff2872d1d9a6e2116391d1bb274ea05">claveCorrecta</a> = false</td></tr>
+<tr class="separator:a5ff2872d1d9a6e2116391d1bb274ea05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0cb2dab9577b465dab16888b8380f9" id="r_afd0cb2dab9577b465dab16888b8380f9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0cb2dab9577b465dab16888b8380f9">opcionSeleccionada</a> = ' '</td></tr>
+<tr class="separator:afd0cb2dab9577b465dab16888b8380f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078938e74376a5d2d8d5d3efd25de176" id="r_a078938e74376a5d2d8d5d3efd25de176"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a078938e74376a5d2d8d5d3efd25de176">tiempo</a></td></tr>
+<tr class="separator:a078938e74376a5d2d8d5d3efd25de176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8347aeb522c9e13e9f376640fad780e7" id="r_a8347aeb522c9e13e9f376640fad780e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8347aeb522c9e13e9f376640fad780e7">temperatura</a></td></tr>
+<tr class="separator:a8347aeb522c9e13e9f376640fad780e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361d9560a5d2b91fded39e22d14764e4" id="r_a361d9560a5d2b91fded39e22d14764e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a361d9560a5d2b91fded39e22d14764e4">luz</a></td></tr>
+<tr class="separator:a361d9560a5d2b91fded39e22d14764e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876d08c1d21086e4fd228744da10d028" id="r_a876d08c1d21086e4fd228744da10d028"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a876d08c1d21086e4fd228744da10d028">estado</a> = 0</td></tr>
+<tr class="separator:a876d08c1d21086e4fd228744da10d028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829655a147df70dd4cc94eae40a2204e" id="r_a829655a147df70dd4cc94eae40a2204e"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a> = 4</td></tr>
+<tr class="separator:a829655a147df70dd4cc94eae40a2204e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd90f1160eaa105bc910d4d7c46b815" id="r_aefd90f1160eaa105bc910d4d7c46b815"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a> = 4</td></tr>
+<tr class="separator:aefd90f1160eaa105bc910d4d7c46b815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856e873a1d14012d57ddb813c4a1e40a" id="r_a856e873a1d14012d57ddb813c4a1e40a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a856e873a1d14012d57ddb813c4a1e40a">keys</a> [<a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a>][<a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a>]</td></tr>
+<tr class="separator:a856e873a1d14012d57ddb813c4a1e40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6753e0ae098b31e2f84d4024e361cf" id="r_a6d6753e0ae098b31e2f84d4024e361cf"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d6753e0ae098b31e2f84d4024e361cf">rowPins</a> [<a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a>] = {32, 34, 36, 38}</td></tr>
+<tr class="separator:a6d6753e0ae098b31e2f84d4024e361cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fece7b062124080e4b2976f9a8b675" id="r_aa9fece7b062124080e4b2976f9a8b675"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9fece7b062124080e4b2976f9a8b675">colPins</a> [<a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a>] = {40, 42, 44, 46}</td></tr>
+<tr class="separator:aa9fece7b062124080e4b2976f9a8b675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6c3cc7e8c762ab0ca1fa2296d7bbfe" id="r_a0e6c3cc7e8c762ab0ca1fa2296d7bbfe"><td class="memItemLeft" align="right" valign="top">Keypad&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e6c3cc7e8c762ab0ca1fa2296d7bbfe">keypad</a> = Keypad(makeKeymap(<a class="el" href="#a856e873a1d14012d57ddb813c4a1e40a">keys</a>), <a class="el" href="#a6d6753e0ae098b31e2f84d4024e361cf">rowPins</a>, <a class="el" href="#aa9fece7b062124080e4b2976f9a8b675">colPins</a>, <a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a>, <a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a>)</td></tr>
+<tr class="separator:a0e6c3cc7e8c762ab0ca1fa2296d7bbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35857fae913c93193ba149fa1c0d6065" id="r_a35857fae913c93193ba149fa1c0d6065"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35857fae913c93193ba149fa1c0d6065">umbrTempHigh</a> = <a class="el" href="#acf1b110324fd8383fe7404e7932189b9">DEFAULT_TEMPHIGH</a></td></tr>
+<tr class="separator:a35857fae913c93193ba149fa1c0d6065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2689abbfe02c733a569aed61ba61bc84" id="r_a2689abbfe02c733a569aed61ba61bc84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2689abbfe02c733a569aed61ba61bc84">umbrTempLow</a> = <a class="el" href="#acbe7a9e726ecec741b2e57e96d1a9aa0">DEFAULT_TEMPLOW</a></td></tr>
+<tr class="separator:a2689abbfe02c733a569aed61ba61bc84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3727e773e4c7abbeb686708ab07ebb" id="r_abe3727e773e4c7abbeb686708ab07ebb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3727e773e4c7abbeb686708ab07ebb">umbrLuzHigh</a> = <a class="el" href="#a31617972a802e7a13f402be9db555bc3">DEFAULT_LUZHIGH</a></td></tr>
+<tr class="separator:abe3727e773e4c7abbeb686708ab07ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f01fdca339d1aef59ef717c7efe17e0" id="r_a2f01fdca339d1aef59ef717c7efe17e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f01fdca339d1aef59ef717c7efe17e0">umbrLuzLow</a> = <a class="el" href="#a74e6b84e2cd64d473169ca5f8e013370">DEFAULT_LUZLOW</a></td></tr>
+<tr class="separator:a2f01fdca339d1aef59ef717c7efe17e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad1aadfe2a34a0e275310caffbd4c06" id="r_afad1aadfe2a34a0e275310caffbd4c06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afad1aadfe2a34a0e275310caffbd4c06">duraciones</a> [] = { 8, 8, 4, 4 }</td></tr>
+<tr class="separator:afad1aadfe2a34a0e275310caffbd4c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7afc895bd611d7904ae7dab9cb3892f" id="r_aa7afc895bd611d7904ae7dab9cb3892f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7afc895bd611d7904ae7dab9cb3892f">melodia</a> [] = { <a class="el" href="#a918042b793d057bd1038d859bc769ec0">NOTE_B6</a>, <a class="el" href="#a4a673e851d3b7e3b56a7cd83fba56cc3">NOTE_C7</a>, <a class="el" href="#a9a1638b00a6bdc7d49ca174d866506d8">NOTE_CS7</a>, <a class="el" href="#aedb563ef21585da30f0b764af28c0756">NOTE_D7</a> }</td></tr>
+<tr class="separator:aa7afc895bd611d7904ae7dab9cb3892f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf4f84424d73575f408ebbfeafe0395" id="r_a5bf4f84424d73575f408ebbfeafe0395"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bf4f84424d73575f408ebbfeafe0395">lastKeyPressTime</a> = 0</td></tr>
+<tr class="separator:a5bf4f84424d73575f408ebbfeafe0395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb587fffa9d2a4497e58632c4bb3bdc8" id="r_adb587fffa9d2a4497e58632c4bb3bdc8"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb587fffa9d2a4497e58632c4bb3bdc8">maxKeyDelay</a> = 7000</td></tr>
+<tr class="separator:adb587fffa9d2a4497e58632c4bb3bdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de «define»</h2>
+<a id="a40b4fe45622d5b33767ead7735f354c4" name="a40b4fe45622d5b33767ead7735f354c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b4fe45622d5b33767ead7735f354c4">&#9670;&#160;</a></span>beta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define beta&#160;&#160;&#160;4090</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00019">19</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ab61d0981ed42df9e18211b273d22cfcd" name="ab61d0981ed42df9e18211b273d22cfcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab61d0981ed42df9e18211b273d22cfcd">&#9670;&#160;</a></span>BUZZER_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUZZER_PIN&#160;&#160;&#160;22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00070">70</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a31617972a802e7a13f402be9db555bc3" name="a31617972a802e7a13f402be9db555bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31617972a802e7a13f402be9db555bc3">&#9670;&#160;</a></span>DEFAULT_LUZHIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_LUZHIGH&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00049">49</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a74e6b84e2cd64d473169ca5f8e013370" name="a74e6b84e2cd64d473169ca5f8e013370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e6b84e2cd64d473169ca5f8e013370">&#9670;&#160;</a></span>DEFAULT_LUZLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_LUZLOW&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00050">50</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="acf1b110324fd8383fe7404e7932189b9" name="acf1b110324fd8383fe7404e7932189b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1b110324fd8383fe7404e7932189b9">&#9670;&#160;</a></span>DEFAULT_TEMPHIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_TEMPHIGH&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración de variables de umbral para Temperatura y intencidad de Luz. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00047">47</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="acbe7a9e726ecec741b2e57e96d1a9aa0" name="acbe7a9e726ecec741b2e57e96d1a9aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe7a9e726ecec741b2e57e96d1a9aa0">&#9670;&#160;</a></span>DEFAULT_TEMPLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_TEMPLOW&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00048">48</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a170c6a1904d45873b6bf59acd2509143" name="a170c6a1904d45873b6bf59acd2509143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170c6a1904d45873b6bf59acd2509143">&#9670;&#160;</a></span>DHT22_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DHT22_PIN&#160;&#160;&#160;A0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00071">71</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a2c509dba12bba99883a5be9341b7a0c5" name="a2c509dba12bba99883a5be9341b7a0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c509dba12bba99883a5be9341b7a0c5">&#9670;&#160;</a></span>DHTTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DHTTYPE&#160;&#160;&#160;DHT22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declarión de pines de buzzer, sensor de luz, sensor de temperatura analogico </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00068">68</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a603280557929e1e4c0f5aad1901841a0" name="a603280557929e1e4c0f5aad1901841a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603280557929e1e4c0f5aad1901841a0">&#9670;&#160;</a></span>ledBluePin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ledBluePin&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00082">82</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a8628db2ed8daecb57a3ef8538b9ed1f2" name="a8628db2ed8daecb57a3ef8538b9ed1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8628db2ed8daecb57a3ef8538b9ed1f2">&#9670;&#160;</a></span>ledGreenPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ledGreenPin&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00081">81</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a2cc48aa17a10801f38e336d2249224da" name="a2cc48aa17a10801f38e336d2249224da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc48aa17a10801f38e336d2249224da">&#9670;&#160;</a></span>ledRedPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ledRedPin&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración de pines de rgb </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00080">80</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a918042b793d057bd1038d859bc769ec0" name="a918042b793d057bd1038d859bc769ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918042b793d057bd1038d859bc769ec0">&#9670;&#160;</a></span>NOTE_B6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOTE_B6&#160;&#160;&#160;1976</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración de variables para el control del buzzer analogico </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00058">58</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a4a673e851d3b7e3b56a7cd83fba56cc3" name="a4a673e851d3b7e3b56a7cd83fba56cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a673e851d3b7e3b56a7cd83fba56cc3">&#9670;&#160;</a></span>NOTE_C7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOTE_C7&#160;&#160;&#160;2093</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00059">59</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a9a1638b00a6bdc7d49ca174d866506d8" name="a9a1638b00a6bdc7d49ca174d866506d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1638b00a6bdc7d49ca174d866506d8">&#9670;&#160;</a></span>NOTE_CS7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOTE_CS7&#160;&#160;&#160;2217</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00060">60</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="aedb563ef21585da30f0b764af28c0756" name="aedb563ef21585da30f0b764af28c0756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb563ef21585da30f0b764af28c0756">&#9670;&#160;</a></span>NOTE_D7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOTE_D7&#160;&#160;&#160;2349</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00061">61</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a988f6310ca6cc078c4e7493068584167" name="a988f6310ca6cc078c4e7493068584167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988f6310ca6cc078c4e7493068584167">&#9670;&#160;</a></span>photo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define photo&#160;&#160;&#160;A1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00072">72</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a912868efa92126901849f6bd39d14c9b" name="a912868efa92126901849f6bd39d14c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912868efa92126901849f6bd39d14c9b">&#9670;&#160;</a></span>PIR_SENSOR_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIR_SENSOR_PIN&#160;&#160;&#160;27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00073">73</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a96d20d7a93eea853f134ec3b9ac583ab" name="a96d20d7a93eea853f134ec3b9ac583ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d20d7a93eea853f134ec3b9ac583ab">&#9670;&#160;</a></span>color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void color </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>red</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>green</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>blue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>tiempo</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md64"></a>
+NAME: color</h2>
+<h2><a class="anchor" id="autotoc_md65"></a>
+PARAMS: char, char, char, int</h2>
+<h2><a class="anchor" id="autotoc_md66"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md67"></a>
+PURPOSE: Permite ajustar la intensidad de cada color por separado (rojo, verde, azul) y especificar el tiempo de visualización del color seleccionado.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00667">667</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a63f0015a508e64681eba633545f18f62" name="a63f0015a508e64681eba633545f18f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f0015a508e64681eba633545f18f62">&#9670;&#160;</a></span>dht()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DHT dht </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a170c6a1904d45873b6bf59acd2509143">DHT22_PIN</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a2c509dba12bba99883a5be9341b7a0c5">DHTTYPE</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6ba10ed13aaf348f37ac0b32f9bf85e" name="aa6ba10ed13aaf348f37ac0b32f9bf85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ba10ed13aaf348f37ac0b32f9bf85e">&#9670;&#160;</a></span>ejecutarOpcion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ejecutarOpcion </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>opcion</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md28"></a>
+NAME: ejecutarOpcion</h2>
+<h2><a class="anchor" id="autotoc_md29"></a>
+PARAMS: char</h2>
+<h2><a class="anchor" id="autotoc_md30"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md31"></a>
+PURPOSE: Permite al usuario interactuar con el menú principal, seleccionando opciones para configurar umbrales o cambiar el modo de funcionamiento llamando a las funciones correspondientes. Si se introduce una opción no válida, simplemente se limpia la selección y se vuelve a mostrar el menú.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00369">369</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="aa57d0ea031455ae41ca3ff37c8db3558" name="aa57d0ea031455ae41ca3ff37c8db3558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57d0ea031455ae41ca3ff37c8db3558">&#9670;&#160;</a></span>esperarSeleccion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void esperarSeleccion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md24"></a>
+NAME: esperarSeleccion</h2>
+<h2><a class="anchor" id="autotoc_md25"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md26"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md27"></a>
+PURPOSE: Proporciona un tiempo de espera para que el usuario seleccione una opción en el teclado. Si se selecciona una opción válida dentro del tiempo límite, se procesa la opción llamando a la función ejecutarOpcion(). Si no se selecciona ninguna opción o se excede el tiempo, la función finaliza sin procesar ninguna opción.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00339">339</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a9f9674abb6702a0e68b5c7d991c2380b" name="a9f9674abb6702a0e68b5c7d991c2380b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9674abb6702a0e68b5c7d991c2380b">&#9670;&#160;</a></span>Estados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Estados </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md8"></a>
+NAME: Estados</h2>
+<h2><a class="anchor" id="autotoc_md9"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md10"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md11"></a>
+PURPOSE: Permite gestionar los diferentes estados del sistema ('0', '1', '2' y '3'), ejecutando las acciones correspondientes a cada uno, como mostrar el menú principal, monitorear sensores, indicar alarmas o solicitar la clave de acceso.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00147">147</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="af97afdf00af0e116e9b5957f6a470fc2" name="af97afdf00af0e116e9b5957f6a470fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97afdf00af0e116e9b5957f6a470fc2">&#9670;&#160;</a></span>lcd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LiquidCrystal lcd </td>
+          <td>(</td>
+          <td class="paramtype">12</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">11</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">5</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">4</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">3</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">2</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración de pines de lcd </p>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&#160;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md4"></a>
+NAME: loop</h2>
+<h2><a class="anchor" id="autotoc_md5"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md6"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md7"></a>
+PURPOSE: La función loop() es el núcleo del programa. Se ejecuta repetidamente, llamando a la función Estados() para gestionar el estado actual del sistema y ejecutar las acciones correspondientes.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00132">132</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ac3bebaa0fc55210dcedca0d632796e22" name="ac3bebaa0fc55210dcedca0d632796e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bebaa0fc55210dcedca0d632796e22">&#9670;&#160;</a></span>Monitoreo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Monitoreo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md48"></a>
+NAME: Monitoreo</h2>
+<h2><a class="anchor" id="autotoc_md49"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md50"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md51"></a>
+PURPOSE: La función Monitoreo() funciona como un bucle principal que se ejecuta continuamente, monitoreando la temperatura, la luminosidad, y respondiendo a la pulsación de una tecla específica (*)</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00546">546</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="accf01166140290f8d4fb5e12b3d51788" name="accf01166140290f8d4fb5e12b3d51788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf01166140290f8d4fb5e12b3d51788">&#9670;&#160;</a></span>MonitoreoMovimiento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MonitoreoMovimiento </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md52"></a>
+NAME: MonitoreoMovimiento</h2>
+<h2><a class="anchor" id="autotoc_md53"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md54"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md55"></a>
+PURPOSE: La función MonitoreoMovimiento() funciona como un detector de movimiento durante un período de 3 segundos, actualizando la pantalla LCD con la información de movimiento detectado y respondiendo en caso de que se detecte movimiento llamando a la función Estados().</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00598">598</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="adea994e4e9ab2bb7c38d31d3f5879fc6" name="adea994e4e9ab2bb7c38d31d3f5879fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea994e4e9ab2bb7c38d31d3f5879fc6">&#9670;&#160;</a></span>mostrarMensaje()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mostrarMensaje </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>mensaje</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md56"></a>
+NAME: mostrarMensaje</h2>
+<h2><a class="anchor" id="autotoc_md57"></a>
+PARAMS: String</h2>
+<h2><a class="anchor" id="autotoc_md58"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md59"></a>
+PURPOSE: La función mostrarMensaje() es una función simple y útil para mostrar mensajes informativos o de alerta. Se encarga de limpiar la pantalla, imprimir el mensaje recibido y mantenerlo visible durante un segundo antes de regresar al código que la llamó.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00629">629</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ac0aca0f34a52fbe7527a03517bc3347e" name="ac0aca0f34a52fbe7527a03517bc3347e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0aca0f34a52fbe7527a03517bc3347e">&#9670;&#160;</a></span>mostrarMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mostrarMenu </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md20"></a>
+NAME: mostrarMenu</h2>
+<h2><a class="anchor" id="autotoc_md21"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md22"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md23"></a>
+PURPOSE: Muestra el menú principal en la pantalla LCD, permite el desplazamiento automático para visualizar todas las opciones y ofrece dos formas de selección: por tecla de navegación ('A' y 'B') o directamente por el número de la opción (del 1 al 6). Al seleccionar una opción válida, se llama a la función ejecutarOpcion() para procesarla.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00283">283</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ad20897c5c8bd47f5d4005989bead0e55" name="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md88"></a>
+NAME: reset</h2>
+<h2><a class="anchor" id="autotoc_md89"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md90"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md91"></a>
+PURPOSE: La función reset() solicita confirmación para realizar un reinicio de los umbrales, restaurándolos a sus valores por defecto. Si se confirma, actualiza los valores y vuelve al menú principal. Si se cancela, regresa al menú principal sin realizar cambios.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00779">779</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md0"></a>
+NAME: setup</h2>
+<h2><a class="anchor" id="autotoc_md1"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md2"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md3"></a>
+PURPOSE: Configura los pines para controlar dispositivos externos como LEDs, inicializa la comunicación serial para enviar o recibir datos y prepara librerías para sensores u otros componentes electrónicos.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00106">106</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a56a1ea84003221a240305c326024ea3e" name="a56a1ea84003221a240305c326024ea3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a1ea84003221a240305c326024ea3e">&#9670;&#160;</a></span>solicitarClave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void solicitarClave </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md12"></a>
+NAME: solicitarClave</h2>
+<h2><a class="anchor" id="autotoc_md13"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md14"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md15"></a>
+PURPOSE: Proporciona un tiempo límite de espera por tecla presionada para evitar entradas erróneas. Almacena la clave ingresada caracter a caracter en un array y oculta los caracteres reales mostrando asteriscos en la pantalla LCD.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00201">201</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ac2300b9e065d5aa715d2cc312f0b4e8c" name="ac2300b9e065d5aa715d2cc312f0b4e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2300b9e065d5aa715d2cc312f0b4e8c">&#9670;&#160;</a></span>sonar_buzz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sonar_buzz </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md60"></a>
+NAME: sonar_buzz</h2>
+<h2><a class="anchor" id="autotoc_md61"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md62"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md63"></a>
+PURPOSE: Permite reproducir tres notas con duraciones predeterminadas y pausas entre ellas.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00646">646</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="afd4ea0e95a34121ba42cbaf3154d5a6e" name="afd4ea0e95a34121ba42cbaf3154d5a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4ea0e95a34121ba42cbaf3154d5a6e">&#9670;&#160;</a></span>umbralLuzHigh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void umbralLuzHigh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md40"></a>
+NAME: umbralLuzHigh</h2>
+<h2><a class="anchor" id="autotoc_md41"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md42"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md43"></a>
+PURPOSE: Modifica el valor de umbrLuzHigh con el valor ingresado en el keypad</h2>
+<p>NOTE: El valor ingresado debe ser mayor a 190 y menor a 1023 </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00478">478</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a1024e3f890b59eecc71bf42c4bcb6849" name="a1024e3f890b59eecc71bf42c4bcb6849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1024e3f890b59eecc71bf42c4bcb6849">&#9670;&#160;</a></span>umbralLuzLow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void umbralLuzLow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md44"></a>
+NAME: umbralLuzLow</h2>
+<h2><a class="anchor" id="autotoc_md45"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md46"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md47"></a>
+PURPOSE: Modifica el valor de umbrLuzLow con el valor ingresado en el keypad</h2>
+<p>NOTE: El valor ingresado debe ser menor a 150 y mayor a 0 </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00512">512</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ab9c6ab15b243537ad6ee55743d8ef2b4" name="ab9c6ab15b243537ad6ee55743d8ef2b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c6ab15b243537ad6ee55743d8ef2b4">&#9670;&#160;</a></span>umbralTempHigh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void umbralTempHigh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md32"></a>
+NAME: umbralTempHigh</h2>
+<h2><a class="anchor" id="autotoc_md33"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md34"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md35"></a>
+PURPOSE: Modifica el valor de umbrTempHigh con el valor ingresado en el keypad</h2>
+<p>NOTE: El valor ingresado debe ser mayor a 30 y menor a 60 </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00408">408</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a816fffa10923121dbf0675d9ddbb4c51" name="a816fffa10923121dbf0675d9ddbb4c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816fffa10923121dbf0675d9ddbb4c51">&#9670;&#160;</a></span>umbralTempLow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void umbralTempLow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md36"></a>
+NAME: umbralTempLow</h2>
+<h2><a class="anchor" id="autotoc_md37"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md38"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md39"></a>
+PURPOSE: Modifica el valor de umbrTempLow con el valor ingresado en el keypad</h2>
+<p>NOTE: El valor ingresado debe ser menor a 26 y mayor a 0 </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00443">443</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ae97e84012a0dd4bd6035ba3b1266febd" name="ae97e84012a0dd4bd6035ba3b1266febd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97e84012a0dd4bd6035ba3b1266febd">&#9670;&#160;</a></span>verificarClave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificarClave </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md16"></a>
+NAME: verificarClave</h2>
+<h2><a class="anchor" id="autotoc_md17"></a>
+PARAMS: ninguno</h2>
+<h2><a class="anchor" id="autotoc_md18"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md19"></a>
+PURPOSE: La función permite el ingreso de una clave por parte del usuario y la compara con una clave predefinida. Si la clave es correcta, habilita el acceso. Si la clave es incorrecta y se superan los intentos permitidos, bloquea el acceso.</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00238">238</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a0fc21d01bc8a6b3fe354fa20ee482758" name="a0fc21d01bc8a6b3fe354fa20ee482758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc21d01bc8a6b3fe354fa20ee482758">&#9670;&#160;</a></span>verificarLuzHigh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificarLuzHigh </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>luz</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md78"></a>
+NAME: verificarLuzHigh</h2>
+<h2><a class="anchor" id="autotoc_md79"></a>
+PARAMS: int luz</h2>
+<h2><a class="anchor" id="autotoc_md80"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md81"></a>
+PURPOSE: Verifica si se modifico el valor en umbrLuzHigh</h2>
+<h2><a class="anchor" id="autotoc_md82"></a>
+NOTE:</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00734">734</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a58dc4816e7c5cf37d523cc832778c0c5" name="a58dc4816e7c5cf37d523cc832778c0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58dc4816e7c5cf37d523cc832778c0c5">&#9670;&#160;</a></span>verificarLuzLow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificarLuzLow </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>luz</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md83"></a>
+NAME: verificarLuzLow</h2>
+<h2><a class="anchor" id="autotoc_md84"></a>
+PARAMS: int luz</h2>
+<h2><a class="anchor" id="autotoc_md85"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md86"></a>
+PURPOSE: Verifica si se modifico el valor en umbrLuzLow</h2>
+<h2><a class="anchor" id="autotoc_md87"></a>
+NOTE:</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00758">758</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a9e1dd39461bef62118160834c4c3c44d" name="a9e1dd39461bef62118160834c4c3c44d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e1dd39461bef62118160834c4c3c44d">&#9670;&#160;</a></span>verificarTempHigh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificarTempHigh </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>temp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md68"></a>
+NAME: verificarTempHigh</h2>
+<h2><a class="anchor" id="autotoc_md69"></a>
+PARAMS: int</h2>
+<h2><a class="anchor" id="autotoc_md70"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md71"></a>
+PURPOSE: Verifica si se modifico el valor en umbrTempHigh</h2>
+<h2><a class="anchor" id="autotoc_md72"></a>
+NOTE:</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00686">686</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ac456a749a7f672efc99a8c5c664a49fd" name="ac456a749a7f672efc99a8c5c664a49fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac456a749a7f672efc99a8c5c664a49fd">&#9670;&#160;</a></span>verificarTempLow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificarTempLow </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>temp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md73"></a>
+NAME: verificarTempLow</h2>
+<h2><a class="anchor" id="autotoc_md74"></a>
+PARAMS: int</h2>
+<h2><a class="anchor" id="autotoc_md75"></a>
+RETURN: nada</h2>
+<h2><a class="anchor" id="autotoc_md76"></a>
+PURPOSE: Verifica si se modifico el valor en umbrTempLow</h2>
+<h2><a class="anchor" id="autotoc_md77"></a>
+NOTE:</h2>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00710">710</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="a3e1bc103a5516c793826386126a9311d" name="a3e1bc103a5516c793826386126a9311d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1bc103a5516c793826386126a9311d">&#9670;&#160;</a></span>band</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool band = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración de variables auxiliares </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00009">9</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ae27e263192f0a38422bd140b1d31f447" name="ae27e263192f0a38422bd140b1d31f447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27e263192f0a38422bd140b1d31f447">&#9670;&#160;</a></span>bandera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bandera = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00014">14</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="ae892685ecf650b88b14da12901b40844" name="ae892685ecf650b88b14da12901b40844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae892685ecf650b88b14da12901b40844">&#9670;&#160;</a></span>bloqueado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bloqueado = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00015">15</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="abbe79c7e2f7d71b2f85cae60b8936924" name="abbe79c7e2f7d71b2f85cae60b8936924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe79c7e2f7d71b2f85cae60b8936924">&#9670;&#160;</a></span>clave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char clave[5] = {'0', '1', '2', '3', '4'}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00011">11</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a5ff2872d1d9a6e2116391d1bb274ea05" name="a5ff2872d1d9a6e2116391d1bb274ea05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff2872d1d9a6e2116391d1bb274ea05">&#9670;&#160;</a></span>claveCorrecta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool claveCorrecta = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00016">16</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="aa9fece7b062124080e4b2976f9a8b675" name="aa9fece7b062124080e4b2976f9a8b675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9fece7b062124080e4b2976f9a8b675">&#9670;&#160;</a></span>colPins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte colPins[<a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a>] = {40, 42, 44, 46}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00040">40</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="aefd90f1160eaa105bc910d4d7c46b815" name="aefd90f1160eaa105bc910d4d7c46b815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd90f1160eaa105bc910d4d7c46b815">&#9670;&#160;</a></span>COLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte COLS = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00031">31</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a961800bf60ff693820efbf7f4bc72788" name="a961800bf60ff693820efbf7f4bc72788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961800bf60ff693820efbf7f4bc72788">&#9670;&#160;</a></span>cont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cont = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00012">12</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="afad1aadfe2a34a0e275310caffbd4c06" name="afad1aadfe2a34a0e275310caffbd4c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad1aadfe2a34a0e275310caffbd4c06">&#9670;&#160;</a></span>duraciones</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int duraciones[] = { 8, 8, 4, 4 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00062">62</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a876d08c1d21086e4fd228744da10d028" name="a876d08c1d21086e4fd228744da10d028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876d08c1d21086e4fd228744da10d028">&#9670;&#160;</a></span>estado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int estado = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00025">25</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="aa94c7b86d418ed6114b2278c43734e57" name="aa94c7b86d418ed6114b2278c43734e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94c7b86d418ed6114b2278c43734e57">&#9670;&#160;</a></span>intentos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int intentos = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00013">13</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a0e6c3cc7e8c762ab0ca1fa2296d7bbfe" name="a0e6c3cc7e8c762ab0ca1fa2296d7bbfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6c3cc7e8c762ab0ca1fa2296d7bbfe">&#9670;&#160;</a></span>keypad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Keypad keypad = Keypad(makeKeymap(<a class="el" href="#a856e873a1d14012d57ddb813c4a1e40a">keys</a>), <a class="el" href="#a6d6753e0ae098b31e2f84d4024e361cf">rowPins</a>, <a class="el" href="#aa9fece7b062124080e4b2976f9a8b675">colPins</a>, <a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a>, <a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00042">42</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a856e873a1d14012d57ddb813c4a1e40a" name="a856e873a1d14012d57ddb813c4a1e40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856e873a1d14012d57ddb813c4a1e40a">&#9670;&#160;</a></span>keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char keys[<a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a>][<a class="el" href="#aefd90f1160eaa105bc910d4d7c46b815">COLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">  {<span class="charliteral">&#39;1&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;A&#39;</span>},</div>
+<div class="line">  {<span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;5&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;B&#39;</span>},</div>
+<div class="line">  {<span class="charliteral">&#39;7&#39;</span>, <span class="charliteral">&#39;8&#39;</span>, <span class="charliteral">&#39;9&#39;</span>, <span class="charliteral">&#39;C&#39;</span>},</div>
+<div class="line">  {<span class="charliteral">&#39;*&#39;</span>, <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;#&#39;</span>, <span class="charliteral">&#39;D&#39;</span>}</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00033">33</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a5bf4f84424d73575f408ebbfeafe0395" name="a5bf4f84424d73575f408ebbfeafe0395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf4f84424d73575f408ebbfeafe0395">&#9670;&#160;</a></span>lastKeyPressTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long lastKeyPressTime = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración Variales Tiempo de espera ingreso clave de seguridad </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00092">92</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a361d9560a5d2b91fded39e22d14764e4" name="a361d9560a5d2b91fded39e22d14764e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361d9560a5d2b91fded39e22d14764e4">&#9670;&#160;</a></span>luz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int luz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00023">23</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="adb587fffa9d2a4497e58632c4bb3bdc8" name="adb587fffa9d2a4497e58632c4bb3bdc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb587fffa9d2a4497e58632c4bb3bdc8">&#9670;&#160;</a></span>maxKeyDelay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned long maxKeyDelay = 7000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00093">93</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="aa7afc895bd611d7904ae7dab9cb3892f" name="aa7afc895bd611d7904ae7dab9cb3892f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7afc895bd611d7904ae7dab9cb3892f">&#9670;&#160;</a></span>melodia</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int melodia[] = { <a class="el" href="#a918042b793d057bd1038d859bc769ec0">NOTE_B6</a>, <a class="el" href="#a4a673e851d3b7e3b56a7cd83fba56cc3">NOTE_C7</a>, <a class="el" href="#a9a1638b00a6bdc7d49ca174d866506d8">NOTE_CS7</a>, <a class="el" href="#aedb563ef21585da30f0b764af28c0756">NOTE_D7</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00063">63</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="afd0cb2dab9577b465dab16888b8380f9" name="afd0cb2dab9577b465dab16888b8380f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0cb2dab9577b465dab16888b8380f9">&#9670;&#160;</a></span>opcionSeleccionada</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char opcionSeleccionada = ' '</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00017">17</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a2ae39a1b13e20f6624c189afc2d64bdd" name="a2ae39a1b13e20f6624c189afc2d64bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae39a1b13e20f6624c189afc2d64bdd">&#9670;&#160;</a></span>password</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char password[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00010">10</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a6d6753e0ae098b31e2f84d4024e361cf" name="a6d6753e0ae098b31e2f84d4024e361cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6753e0ae098b31e2f84d4024e361cf">&#9670;&#160;</a></span>rowPins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte rowPins[<a class="el" href="#a829655a147df70dd4cc94eae40a2204e">ROWS</a>] = {32, 34, 36, 38}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00039">39</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a829655a147df70dd4cc94eae40a2204e" name="a829655a147df70dd4cc94eae40a2204e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829655a147df70dd4cc94eae40a2204e">&#9670;&#160;</a></span>ROWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ROWS = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declaración de variables Keypad </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00030">30</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a8347aeb522c9e13e9f376640fad780e7" name="a8347aeb522c9e13e9f376640fad780e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8347aeb522c9e13e9f376640fad780e7">&#9670;&#160;</a></span>temperatura</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float temperatura</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00022">22</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a078938e74376a5d2d8d5d3efd25de176" name="a078938e74376a5d2d8d5d3efd25de176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078938e74376a5d2d8d5d3efd25de176">&#9670;&#160;</a></span>tiempo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long tiempo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00021">21</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="abe3727e773e4c7abbeb686708ab07ebb" name="abe3727e773e4c7abbeb686708ab07ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3727e773e4c7abbeb686708ab07ebb">&#9670;&#160;</a></span>umbrLuzHigh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int umbrLuzHigh = <a class="el" href="#a31617972a802e7a13f402be9db555bc3">DEFAULT_LUZHIGH</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00053">53</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a2f01fdca339d1aef59ef717c7efe17e0" name="a2f01fdca339d1aef59ef717c7efe17e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f01fdca339d1aef59ef717c7efe17e0">&#9670;&#160;</a></span>umbrLuzLow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int umbrLuzLow = <a class="el" href="#a74e6b84e2cd64d473169ca5f8e013370">DEFAULT_LUZLOW</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00053">53</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a35857fae913c93193ba149fa1c0d6065" name="a35857fae913c93193ba149fa1c0d6065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35857fae913c93193ba149fa1c0d6065">&#9670;&#160;</a></span>umbrTempHigh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int umbrTempHigh = <a class="el" href="#acf1b110324fd8383fe7404e7932189b9">DEFAULT_TEMPHIGH</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00052">52</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+<a id="a2689abbfe02c733a569aed61ba61bc84" name="a2689abbfe02c733a569aed61ba61bc84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2689abbfe02c733a569aed61ba61bc84">&#9670;&#160;</a></span>umbrTempLow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int umbrTempLow = <a class="el" href="#acbe7a9e726ecec741b2e57e96d1a9aa0">DEFAULT_TEMPLOW</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="sketch_8ino_source.html#l00052">52</a> del archivo <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

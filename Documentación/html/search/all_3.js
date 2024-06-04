@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['3_20ejecutando_20las_20acciones_20correspondientes_20a_20cada_20uno_20como_20mostrar_20el_20menú_20principal_20monitorear_20sensores_20indicar_20alarmas_20o_20solicitar_20la_20clave_20de_20acceso_0',['PURPOSE: Permite gestionar los diferentes estados del sistema (&apos;0&apos;, &apos;1&apos;, &apos;2&apos; y &apos;3&apos;), ejecutando las acciones correspondientes a cada uno, como mostrar el menú principal, monitorear sensores, indicar alarmas o solicitar la clave de acceso.',['../sketch_8ino.html#autotoc_md11',1,'']]],
+  ['3_20segundos_20actualizando_20la_20pantalla_20lcd_20con_20la_20información_20de_20movimiento_20detectado_20y_20respondiendo_20en_20caso_20de_20que_20se_20detecte_20movimiento_20llamando_20a_20la_20función_20estados_1',['PURPOSE: La función MonitoreoMovimiento() funciona como un detector de movimiento durante un período de 3 segundos,  actualizando la pantalla LCD con la información de movimiento detectado y  respondiendo en caso de que se detecte movimiento llamando a la función Estados().',['../sketch_8ino.html#autotoc_md55',1,'']]]
+];
