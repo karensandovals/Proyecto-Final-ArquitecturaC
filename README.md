@@ -9,7 +9,7 @@ El sistema permite: Ingreso de usuarios: Un usuario puede ingresar al sistema ut
 
 Menú principal: Una vez ingresado, el usuario tiene acceso a un menú principal donde puede:
 
-Monitorear sensores: El sistema puede leer datos de sensores como temperatura, humedad y luminosidad y mostrarlos en la pantalla LCD.
+Monitorear sensores: El sistema puede leer datos de sensores como temperatura, luminosidad y movimiento y mostrarlos en la pantalla LCD.
 
 Visualizar alarmas: Si se detecta un valor fuera de rango en los sensores, el sistema activa una alarma visual (LED rojo) y sonora (buzzer) y muestra un mensaje en la pantalla LCD.
 
